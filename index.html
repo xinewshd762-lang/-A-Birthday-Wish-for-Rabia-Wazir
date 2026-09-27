@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Rabia Wazir ❤️</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  background:#08030a;
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* BACKGROUND */
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-3;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(255,35,100,.18),transparent 30%),
+    radial-gradient(circle at 80% 70%,rgba(190,0,90,.18),transparent 30%),
+    linear-gradient(135deg,#08030a,#170713,#050207);
+}
+
+#particles{
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+}
+
+/* HEARTS */
+.heart{
+  position:fixed;
+  bottom:-40px;
+  font-size:20px;
+  animation:float 8s linear forwards;
+  opacity:.8;
+  pointer-events:none;
+}
+@keyframes float{
+  0%{transform:translateY(0) rotate(0);opacity:0}
+  15%{opacity:.9}
+  100%{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:30px 20px;
+  position:relative;
+}
+.hero-box{
+  max-width:900px;
+  animation:appear 2s ease;
+}
+@keyframes appear{
+  from{opacity:0;transform:translateY(35px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.small{
+  color:#ff91b9;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  font-size:13px;
+  margin-bottom:20px;
+}
+h1{
+  font-size:clamp(48px,12vw,110px);
+  line-height:.95;
+  background:linear-gradient(90deg,#fff,#ffb5ce,#ff4f8b,#fff);
+  background-size:300%;
+  -webkit-background-clip:text;
+  color:transparent;
+  animation:shine 5s infinite;
+}
+@keyframes shine{
+  0%,100%{background-position:0}
+  50%{background-position:100%}
+}
+.hero p{
+  margin:28px auto;
+  max-width:650px;
+  color:#e9cdd7;
+  font-size:18px;
+  line-height:1.8;
+}
+.btn{
+  display:inline-block;
+  border:1px solid rgba(255,150,190,.5);
+  color:#fff;
+  text-decoration:none;
+  padding:15px 28px;
+  border-radius:50px;
+  background:rgba(255,50,120,.12);
+  backdrop-filter:blur(10px);
+  box-shadow:0 0 30px rgba(255,40,110,.15);
+  transition:.3s;
+}
+.btn:hover{
+  transform:translateY(-4px) scale(1.03);
+  background:#ff397b;
+  box-shadow:0 0 35px rgba(255,40,110,.6);
+}
+
+/* SECTIONS */
+section{
+  padding:100px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+.section-title span{
+  color:#ff80aa;
+  letter-spacing:4px;
+  font-size:12px;
+  text-transform:uppercase;
+}
+.section-title h2{
+  font-size:clamp(35px,7vw,65px);
+  margin-top:12px;
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,160,190,.14);
+  border-radius:28px;
+  padding:40px;
+  backdrop-filter:blur(16px);
+  box-shadow:0 20px 70px rgba(0,0,0,.35);
+}
+
+/* BIRTHDAY */
+.birthday{
+  text-align:center;
+}
+.cake{
+  font-size:90px;
+  margin-bottom:20px;
+  filter:drop-shadow(0 0 25px rgba(255,70,130,.5));
+}
+.birthday h3{
+  font-size:38px;
+  color:#ff9cbd;
+  margin-bottom:20px;
+}
+.birthday p{
+  color:#ead5dd;
+  line-height:2;
+  font-size:17px;
+}
+
+/* LETTER */
+.letter{
+  max-width:800px;
+  margin:auto;
+}
+.letter p{
+  font-size:19px;
+  line-height:2;
+  color:#eadde2;
+  margin-bottom:20px;
+}
+.signature{
+  color:#ff8fb3;
+  font-size:28px;
+  text-align:right;
+  margin-top:35px;
+}
+
+/* MEMORIES */
+.memories{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.memory{
+  height:240px;
+  border-radius:22px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+  background:
+    linear-gradient(135deg,rgba(255,40,110,.3),rgba(70,0,30,.5));
+  border:1px solid rgba(255,150,190,.15);
+  transition:.4s;
+}
+.memory:hover{
+  transform:translateY(-8px) rotate(1deg);
+  box-shadow:0 20px 45px rgba(255,30,100,.2);
+}
+.memory b{
+  font-size:20px;
+}
+
+/* PROPOSAL */
+.proposal{
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.proposal h2{
+  font-size:clamp(40px,8vw,75px);
+  margin:20px 0;
+}
+.proposal .name{
+  color:#ff7fa8;
+}
+.proposal p{
+  color:#e7d4dc;
+  font-size:18px;
+  line-height:1.8;
+  max-width:650px;
+  margin:0 auto 35px;
+}
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+.yes{
+  background:linear-gradient(135deg,#ff2f72,#d50052);
+  border:0;
+  cursor:pointer;
+  font-size:17px;
+}
+.no{
+  cursor:pointer;
+}
+
+/* YES SCREEN */
+#loveMessage{
+  display:none;
+  margin-top:35px;
+  animation:appear 1s ease;
+}
+#loveMessage h3{
+  font-size:42px;
+  color:#ff8fb4;
+  margin-bottom:15px;
+}
+#loveMessage p{
+  margin:auto;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:60px 20px;
+  color:#9f7e8a;
+  font-size:14px;
+}
+footer strong{color:#ff82aa}
+
+/* MOBILE */
+@media(max-width:700px){
+  section{padding:75px 16px}
+  .card{padding:28px 20px}
+  .memories{grid-template-columns:1fr}
+  .memory{height:170px}
+  .hero p{font-size:16px}
+}
+
+/* CONFETTI */
+.confetti{
+  position:fixed;
+  width:8px;
+  height:14px;
+  top:-20px;
+  z-index:9999;
+  animation:fall 4s linear forwards;
+}
+@keyframes fall{
+  to{
+    transform:translateY(110vh) rotate(720deg);
+    opacity:0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-box">
+    <div class="small">A little surprise from Ali</div>
+
+    <h1>Rabia Wazir</h1>
+
+    <p>
+      Some people enter our lives quietly...
+      and somehow become the most beautiful part of our story. ❤️
+    </p>
+
+    <a href="#birthday" class="btn">Open Your Surprise ✨</a>
+  </div>
+</header>
+
+<!-- BIRTHDAY -->
+<section id="birthday">
+  <div class="section-title">
+    <span>Today is about you</span>
+    <h2>Happy Birthday, Rabia 🎂</h2>
+  </div>
+
+  <div class="card birthday">
+    <div class="cake">🎂</div>
+
+    <h3>Happy Birthday Beautiful ❤️</h3>
+
+    <p>
+      Rabia, today is not just another day.
+      Today is the day the world was blessed with someone
+      who means so much to me.
+      <br><br>
+      May your smile always stay this beautiful,
+      may every dream of yours come true,
+      and may your life always be filled with happiness,
+      love and beautiful moments.
+      <br><br>
+      <strong>Happy Birthday, Rabia Wazir. 🌹</strong>
+    </p>
+  </div>
+</section>
+
+<!-- LETTER -->
+<section>
+  <div class="section-title">
+    <span>A message from the heart</span>
+    <h2>Dear Rabia...</h2>
+  </div>
+
+  <div class="card letter">
+
+    <p>
+      I don't know if words can ever explain exactly what
+      you mean to me, but today I want to try.
+    </p>
+
+    <p>
+      Your name has become a beautiful thought in my mind.
+      Your smile has a way of making ordinary moments feel special.
+      And somehow, whenever I think about happiness,
+      your face comes to my mind.
+    </p>
+
+    <p>
+      I don't promise a perfect life,
+      because nobody can promise that.
+      But I can promise that whatever I feel for you
+      comes from my heart.
+    </p>
+
+    <p>
+      So on your special day, I just want you to know...
+      <strong>you are truly special to me. ❤️</strong>
+    </p>
+
+    <div class="signature">
+      — Ali ❤️
+    </div>
+
+  </div>
+</section>
+
+<!-- MEMORIES -->
+<section>
+  <div class="section-title">
+    <span>Our little story</span>
+    <h2>Beautiful Moments ✨</h2>
+  </div>
+
+  <div class="memories">
+
+    <div class="memory">
+      <div>
+        <div style="font-size:45px">🌹</div>
+        <b>A beautiful beginning</b>
+      </div>
+    </div>
+
+    <div class="memory">
+      <div>
+        <div style="font-size:45px">❤️</div>
+        <b>A special connection</b>
+      </div>
+    </div>
+
+    <div class="memory">
+      <div>
+        <div style="font-size:45px">✨</div>
+        <b>A story worth remembering</b>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROPOSAL -->
+<section>
+  <div class="card proposal">
+
+    <div class="small">One last thing...</div>
+
+    <h2>
+      <span class="name">Rabia</span>,
+      will you be mine? 💍
+    </h2>
+
+    <p>
+      I don't want to make this moment complicated.
+      I just want to ask the one question
+      that has been living in my heart.
+      <br><br>
+      <strong>
+        Rabia Wazir, would you give Ali a chance
+        to make you smile for the rest of the journey? ❤️
+      </strong>
+    </p>
+
+    <div class="buttons">
+      <button class="btn yes" onclick="sayYes()">
+        YES ❤️
+      </button>
+
+      <button class="btn no" id="noBtn" onclick="moveNo()">
+        Let me think 🙈
+      </button>
+    </div>
+
+    <div id="loveMessage">
+      <h3>My heart is smiling! ❤️</h3>
+      <p>
+        Thank you, Rabia. 🌹<br>
+        This moment will always be special.
+        <br><br>
+        — Ali
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  Made with ❤️ especially for <strong>Rabia Wazir</strong>
+  <br><br>
+  From Ali
+</footer>
+
+<script>
+
+/* FLOATING HEARTS */
+function createHeart(){
+  const heart=document.createElement("div");
+  heart.className="heart";
+
+  const hearts=["❤️","💗","💕","💖","🌹","✨"];
+  heart.innerHTML=hearts[Math.floor(Math.random()*hearts.length)];
+
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.fontSize=(15+Math.random()*25)+"px";
+  heart.style.animationDuration=(5+Math.random()*5)+"s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(()=>heart.remove(),10000);
+}
+
+setInterval(createHeart,700);
+
+
+/* YES BUTTON */
+function sayYes(){
+
+  document.getElementById("loveMessage").style.display="block";
+
+  for(let i=0;i<100;i++){
+
+    const c=document.createElement("div");
+    c.className="confetti";
+
+    const symbols=["❤️","💖","💕","✨","🌹","💗"];
+
+    c.innerHTML=symbols[Math.floor(Math.random()*symbols.length)];
+
+    c.style.left=Math.random()*100+"vw";
+    c.style.fontSize=(12+Math.random()*25)+"px";
+    c.style.animationDuration=(2+Math.random()*3)+"s";
+
+    document.body.appendChild(c);
+
+    setTimeout(()=>c.remove(),5000);
+  }
+
+  window.scrollTo({
+    top:document.body.scrollHeight,
+    behavior:"smooth"
+  });
+}
+
+
+/* PLAYFUL NO BUTTON */
+function moveNo(){
+
+  const btn=document.getElementById("noBtn");
+
+  const x=(Math.random()*180)-90;
+  const y=(Math.random()*100)-50;
+
+  btn.style.transform=
+    "translate("+x+"px,"+y+"px)";
+}
+
+
+/* SOFT PARTICLES */
+const particleBox=document.getElementById("particles");
+
+for(let i=0;i<35;i++){
+
+  const p=document.createElement("div");
+
+  p.style.position="absolute";
+  p.style.width=(Math.random()*3+1)+"px";
+  p.style.height=p.style.width;
+  p.style.borderRadius="50%";
+  p.style.background="rgba(255,170,200,.7)";
+  p.style.left=Math.random()*100+"%";
+  p.style.top=Math.random()*100+"%";
+  p.style.boxShadow="0 0 10px rgba(255,100,160,.5)";
+  p.style.animation=
+    "twinkle "+(2+Math.random()*4)+"s infinite alternate";
+
+  particleBox.appendChild(p);
+}
+
+const style=document.createElement("style");
+
+style.innerHTML=`
+@keyframes twinkle{
+  from{opacity:.1;transform:scale(.5)}
+  to{opacity:1;transform:scale(1.5)}
+}`;
+
+document.head.appendChild(style);
+
+</script>
+
+</body>
+  </html>
